@@ -1,0 +1,87 @@
+{
+  "Welcome":" مرحبا بك",
+  "navbar": {
+    "home": "الرئيسية",
+    "categories": "الفئات"
+  },
+  "login": {
+    "btn": "تسجيل الدخول",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "forgotPass": "نسيت كلمة المرور",
+    "rememberMe": "تذكرني",
+    "Don'tHaveAnAccount?": "ليس لديك حساب ؟",
+    "register": "تسجيل مستخدم جديد"
+  },
+  "signOut": "تسجيل الخروج",
+  "signIn": "تسجيل الدخول",
+  "lang": {
+    "ar": "عربي",
+    "en": "انجليزي"
+  },
+  "register": {
+    "registerTitle": "The best offer for you",
+    "registerDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, itaque accusantium odio, soluta, corrupti aliquam quibusdam tempora at cupiditate quis eum maiores libero veritatis? Dicta facilis sint aliquid ipsum atque?",
+    "btn": "تسجيل جديد",
+    "fName": "الاسم الاول",
+    "lName": "الاسم الاخير",
+    "login": "تسجيل دخول حساب مسبق",
+    "email": "البريد الإلكتروني",
+    "confirmEmail": " تاكيد البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "confirmPassword": "تاكيد كلمة المرور",
+    "phone": "رقم الموبيل",
+    "address": "العنوان",
+    "birthdate": "تاريخ الميلاد",
+    "HaveAnAccount?": "هل لديك حساب بالفعل ؟"
+  },
+  "home": {
+    "homeTitle": "مرحبا بك في سامسونج ستور",
+    "homeDescription": "Here you can buy the genuine samsung products with the best prices."
+  },
+  "hotDeals": {
+    "off": "خصم",
+    "originalPrice": "السعر الاصلي",
+    "currentPrice": "السعر بعدالخصم"
+  },
+  "whyUs": {
+    "whyUsTitle": "لماذا سامسونج",
+    "fastDelivery": "سرعة التوصيل",
+    "fastDeliveryDescription": "variations of passages of Lorem Ipsum available",
+    "freeShiping": "شحن مجاني",
+    "freeShipingDescription": "variations of passages of Lorem Ipsum available",
+    "bestQuality": "أفضل جودة ",
+    "bestQualityDescription": "variations of passages of Lorem Ipsum available"
+  },
+  "categories": {
+    "categoriesTitle": "مرحبا بك في الفئات",
+    "categoriesDescription": "Here you can buy the genuine samsung products with the best prices.",
+    "mobile": "موبيل",
+    "refrigerator": "تلاجه",
+    "microwave": "ميكرويف",
+    "mobileCategory": "  فئات الموبيل",
+    "refrigeratorCategory": " فئات الثلاجات",
+    "microwaveCategory": "فئات الميكرويف"
+  },
+  "products": {
+    "off": "خصم",
+    "originalPrice": "السعر الاصلي",
+    "currentPrice": "السعر بعدالخصم"
+  },
+  "productDetails": {
+    "addToCard": " اضف الي العربه"
+  },
+  "footer": {
+    "address": " القاهرة, مصر",
+    "information": "معلومات",
+    "description": "Eligendi sunt, provident, debitis nemo, facilis cupiditate velit libero dolorum aperiam enim nulla iste maxime corrupti ad illo libero minus."
+  },
+  "validations": {
+    "required": "هذا الحقل مطلوب",
+    "minLength": "يجب أن يتكون هذا الحقل من 3 أحرف على الأقل",
+    "passwordMatch": "كلمة المرور يجب ان تتطابق",
+    "emailMatch": "يجب أن يتطابق البريد الإلكتروني",
+    "NothingwasFound": "لم يتم العثور على نتائج"
+  },
+  "please enter a valid username or password":"الرجاء إدخال اسم مستخدم أو كلمة مرور صالحة"
+}

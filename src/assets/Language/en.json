@@ -1,0 +1,83 @@
+{
+  "Welcome":"Welcome ",
+  "navbar": {
+    "home": "Home",
+    "categories": "Categories"
+  },
+  "login": {
+    "btn": "Login",
+    "email": "Email",
+    "password": "Password",
+    "forgotPass": "Forgot Password",
+    "rememberMe": "Remember Me",
+    "Don'tHaveAnAccount?": "Don't Have an account?",
+    "register": "Register"
+  },
+  "signOut": "Sign Out",
+  "signIn": "Sign In",
+  "lang": {
+    "ar": "Arabic",
+    "en": "English"
+  },
+  "register": {
+    "registerTitle": "The best offer for you",
+    "registerDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, itaque accusantium odio, soluta, corrupti aliquam quibusdam tempora at cupiditate quis eum maiores libero veritatis? Dicta facilis sint aliquid ipsum atque?",
+    "btn": "Sign Up",
+    "fName": "First Name",
+    "lName": "Last Name",
+    "login": "Login",
+    "email": "Email",
+    "confirmEmail": "Confirm Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "phone": "Phone Number",
+    "address": "Address",
+    "birthdate": "Birthdate",
+    "HaveAnAccount?": "Have an account ?"
+  },
+  "home": {
+    "homeTitle": "Welcome to Samsung shops",
+    "homeDescription": "Here you can buy the genuine samsung products with the best prices."
+  },
+  "hotDeals": {
+    "off": "Off",
+    "originalPrice": "Original Price",
+    "currentPrice": "Current Price"
+  },
+  "whyUs": {
+    "whyUsTitle": "Why Us",
+    "fastDelivery": "FAST DELIVERY",
+    "fastDeliveryDescription": "variations of passages of Lorem Ipsum available",
+    "freeShiping": "FREE SHIPING",
+    "freeShipingDescription": "variations of passages of Lorem Ipsum available",
+    "bestQuality": "BEST QUALITY",
+    "bestQualityDescription": "variations of passages of Lorem Ipsum available"
+  },
+  "categories": {
+    "categoriesTitle": "Welcome to Categories",
+    "categoriesDescription": "Here you can buy the genuine samsung products with the best prices.",
+    "mobile": "Mobile",
+    "refrigerator": "Refrigerator",
+    "microwave": "Microwave",
+    "mobileCategory": "Mobile Category",
+    "refrigeratorCategory": "Refrigerator Category",
+    "microwaveCategory": "Microwave Category"
+  },
+  "products": {
+    "off": "Off",
+    "originalPrice": "Original Price",
+    "currentPrice": "Current Price"
+  },
+  "productDetails": {
+    "addToCard": "Add To Card"
+  },
+  "validations": {
+    "required": "This filed is required",
+    "minLength": "This filed should be at least 3 characters",
+    "passwordMatch": "Password must match",
+    "emailMatch": "Email must match",
+    "NothingwasFound": "Nothing was Found"
+  },
+  "please enter a valid username or password":"Please enter a valid username or password"
+
+}

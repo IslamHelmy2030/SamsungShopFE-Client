@@ -1,0 +1,31 @@
+.back-to-top {
+  position: fixed;
+  bottom: 55px;
+  right: 50px;
+  display: none;
+  font-size: 20px;
+  outline: none;
+  background-color: #0073dc;
+  color: #fff;
+  border-radius: 50%;
+  height: 2.57143em;
+  line-height: 1;
+  padding: 0;
+  width: 2.57143em;
+  box-shadow: none;
+  transition: box-shadow .28s cubic-bezier(.4,0,.2,1);
+  -webkit-font-smoothing: antialiased;
+  border: 1px solid;
+  box-sizing: border-box;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  z-index: 101;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

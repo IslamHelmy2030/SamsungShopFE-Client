@@ -1,0 +1,126 @@
+<header class="header_section">
+  <nav class="navbar navbar-expand-lg bg-light shadow-sm mb-5 bg-white rounded">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/" style="color: black">
+        SAMSUNG-SHOPS</a
+      >
+      <button
+        class="navbar-toggler bg-light"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse"
+        id="navbarSupportedContent"
+        style="margin-left: 150px"
+      >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              aria-current="page"
+              routerLink="/home"
+              routerLinkActive="active"
+              *ngIf="isLogin"
+            >
+              {{ "navbar.home" | translate }}</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              [routerLink]="['/categories']"
+              routerLinkActive="active"
+              *ngIf="isLogin"
+              >{{ "navbar.categories" | translate }}</a
+            >
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbat-right">
+          <!-- <li
+            class="nav-item"
+            style="margin-right: 10px"
+            routerLinkActive="active"
+          >
+            <a class="nav-link" routerLink="/signup" *ngIf="!isLogin"
+              ><span class="glyphicon glyphicon-user"></span>Sign Up</a
+            >
+          </li> -->
+          <li *ngIf="selectedLanguage === 'en'">
+            <a
+              class="nav-link"
+              (click)="switchLang('ar')"
+              style="cursor: pointer"
+              ><i class="fa fa-language m-1" aria-hidden="true"></i>
+
+              <!-- <img class="w20 mr-2" [src]="flag.ar" /> -->
+              <!-- {{ "lang.ar" | translate }} -->
+            </a>
+          </li>
+          <li *ngIf="selectedLanguage === 'ar'">
+            <a
+              class="nav-link"
+              (click)="switchLang('en')"
+              style="cursor: pointer"
+              ><i class="fa fa-language m-1" aria-hidden="true"></i>
+              <!-- <img class="w20 mr-2" [src]="flag.en" /> -->
+              <!-- {{ "lang.en" | translate }} -->
+            </a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <!-- <a class="nav-link" routerLink="/login" *ngIf="!isLogin"
+              ><span class="glyphicon glyphicon-log-in"></span> Sign in</a
+            > -->
+            <a
+              class="nav-link"
+              routerLink="/auth/login"
+              *ngIf="isLogin"
+              (click)="SignOut()"
+            >
+              {{ "signOut" | translate }}
+
+              <i class="fa fa-sign-out m-1" aria-hidden="true"></i>
+
+              <!-- <i class="fa fa-solid fa-user-plus"></i> -->
+              <!-- <i class="fa fa-sharp fa-solid fa-right-to-bracket"></i>
+              <i class="fa fa-solid fa-right-from-bracket"></i> -->
+            </a>
+          </li>
+        </ul>
+
+        <!-- <ul class="nav nav-pills">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-toggle="dropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <img
+                class="w20 mr-2"
+                [src]="locale === 'en' ? flag.en : flag.ar"
+              />
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" (click)="switchLang('en')">
+                <img class="w20 mr-2" [src]="flag.en" />
+                English
+              </a>
+              <a class="dropdown-item" (click)="switchLang('ar')">
+                <img class="w20 mr-2" [src]="flag.ar" />
+                العربية
+              </a>
+            </div>
+          </li>
+        </ul> -->
+      </div>
+    </div>
+  </nav>
+</header>

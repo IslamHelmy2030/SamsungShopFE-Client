@@ -1,0 +1,110 @@
+<div class="container">
+  <ngx-spinner
+    bdColor="rgba(51,51,51,0.8)"
+    size="medium"
+    color="#fff"
+    type="ball-scale-multiple"
+  >
+    <p style="font-size: 20px; color: white">Loading...</p>
+  </ngx-spinner>
+
+  <div *ngIf="paginationDto.totalRowsCount !== 0" class="row slider_section">
+    <div class="col-md-12">
+      <div class="detail-box">
+        <h1 class="text-center">
+          {{ "home.homeTitle" | translate }}
+        </h1>
+        <p class="text-center">
+          {{ "home.homeDescription" | translate }}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <section *ngIf="paginationDto.totalRowsCount !== 0" id="products">
+    <div class="articles" id="articles">
+      <div class="container">
+        <div class="bbb_deals" *ngFor="let product of hotDeals">
+          <a
+            class="nav-link"
+            style="cursor: pointer"
+            [routerLink]="'/products/Details/' + product.id"
+          >
+            <div *ngIf="product.discount" class="ribbon ribbon-top-right">
+              <span
+                >{{ product.discount }} {{ "hotDeals.off" | translate }}</span
+              >
+            </div>
+
+            <div class="bbb_deals_slider_container">
+              <!-- bbb_deals Item -->
+              <div class="bbb_deals_item">
+                <div class="bbb_deals_image">
+                  <img [src]="product.imageFile" alt="" />
+                </div>
+                <div class="bbb_deals_content">
+                  <div
+                    class="bbb_deals_info_line d-flex flex-row justify-content-between"
+                  >
+                    <div class="bbb_deals_item_category">
+                      <a href="#">{{ "hotDeals.originalPrice" | translate }}</a>
+                    </div>
+                    <div class="bbb_deals_item_price_a ml-auto">
+                      <del>{{ product.price }}</del>
+                    </div>
+                  </div>
+                  <div
+                    class="bbb_deals_info_line d-flex flex-row justify-content-between"
+                  >
+                    <div class="bbb_deals_item_category">
+                      <a href="#">{{ "hotDeals.currentPrice" | translate }}</a>
+                    </div>
+
+                    <div class="bbb_deals_item_price ml-auto">
+                      {{ product.priceAfterDiscount }}
+                    </div>
+                  </div>
+                  <div
+                    class="bbb_deals_info_line d-flex flex-row justify-content-between"
+                  >
+                    <div class="bbb_deals_item_name">
+                      {{ product.productName }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="d-flex justify-content-center">
+    <div class="" *ngIf="paginationDto.totalRowsCount === 0">
+      <img src="assets/branding/images/no-result.jpg" class="" alt="" />
+      <h1 class="text-center text-dark">
+        {{ "validations.NothingwasFound" | translate }}
+      </h1>
+    </div>
+
+    <ngb-pagination
+      *ngIf="paginationDto.totalRowsCount > paginationDto.pageSize"
+      [collectionSize]="paginationDto.totalRowsCount"
+      [(page)]="paginationDto.currentPage"
+      [rotate]="paginationDto.rotate"
+      [boundaryLinks]="paginationDto.boundaryLinks"
+      [pageSize]="paginationDto.pageSize"
+      [maxSize]="paginationDto.maxSizePagesLinks"
+      [ellipses]="paginationDto.ellipses"
+      (pageChange)="loadPage($event)"
+    >
+      <ng-template ngbPaginationFirst> << </ng-template>
+      <ng-template ngbPaginationLast> >> </ng-template>
+      <ng-template ngbPaginationPrevious> < </ng-template>
+      <ng-template ngbPaginationNext> > </ng-template>
+      <ng-template ngbPaginationEllipsis>...</ng-template>
+      <ng-template ngbPaginationNumber let-page>{{ page }}</ng-template>
+    </ngb-pagination>
+  </div>
+</div>

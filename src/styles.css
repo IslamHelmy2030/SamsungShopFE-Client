@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* @import 'assets/branding/css/bootstrap.css'; */
+@import 'assets/branding/css/style.css';
+@import 'assets/branding/css/responsive.css';
+
+
+.alert-danger{
+    padding: .3rem .5rem;
+    font-size: .9rem;
+    font-weight: 500;
+}

@@ -1,0 +1,48 @@
+<section
+  class="product_section layout_padding shadow-sm p-3 mb-5 bg-body rounded"
+>
+  <div class="row slider_section">
+    <div class="col-md-12">
+      <div class="detail-box">
+        <h1 class="text-center">
+          {{ "categories.categoriesTitle" | translate }}
+        </h1>
+        <p  class="text-center">
+          {{ "categories.categoriesDescription" | translate }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <ngx-spinner
+      bdColor="rgba(51,51,51,0.8)"
+      size="medium"
+      color="#fff"
+      type="ball-scale-multiple"
+    >
+      <p style="font-size: 20px; color: white">Loading...</p>
+    </ngx-spinner>
+
+    <section id="categories">
+      <div class="articles" id="articles">
+        <!-- <h2 class="main-title">Our Categories</h2> -->
+        <div class="container">
+          <div class="box" *ngFor="let cat of categories">
+            <a
+              class="nav-link"
+              style="cursor: pointer"
+              [routerLink]="'/categories/' + cat.id"
+            >
+              <img [src]="cat.imageFile" [alt]="cat.name" />
+              <div class="content">
+                <h3>{{ cat.name }}</h3>
+                <hr />
+                <p>{{ cat.description }}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
